@@ -10,9 +10,9 @@ Követelmény Specifiáció
 
 Jelenlegi helyzet
 ------------------
-- 
-- 
-- 
+- Manapság már minden online történik és az irodák már nem papírokkal, hanem számítógépekkel és digitális eszközökkel vannak tele, nálunk sem más a helyzet. Az elmúlt években nagy beruházásokra került sor, amelyek újabb technológiák bevezetésére adott lehetőséget, mivel szükséges volt számunkra is versenyképesnek maradni a mai piacon.
+- Viszont jelenleg a vállalatunknak még mindig van olyan részlege ahol papírmunkát kell végezni, ezt szeretnénk digitálisra cserélni, jelen esetben ezek a kérdőívek, amelyek még nem elektronikus formában vannak.
+- A kérdőívek által szerzett anyagokat fel kell vezetni számítógépes adatabázisokba, amely manapság rengeteg utómunkát igényel. Manuálisan végezve ez nagy idő kiesést produkál.
 
 Vágyálom rendszer
 ------------------
