@@ -16,9 +16,10 @@ Jelenlegi helyzet
 
 Vágyálom rendszer
 ------------------
-- 
-- 
-- 
+- A felhasználó a bejelentkezés után képes belépni a saját fiókjába. 
+- Szükség esetén a jelszót módosítani tudja a fsz. .
+- A felhasználó elkezdi az általa választott kérdőívvet. -> Először egy tesztet tölt ki a témában -> Elkezdi a teszt kitöltését.
+- Amennyiben végzett, el tudja menteni a válaszait, amely később kiértékelhetővé válik.
 
 Jelenlegi üzleti folyamatok modellje
 -------------------------------------
