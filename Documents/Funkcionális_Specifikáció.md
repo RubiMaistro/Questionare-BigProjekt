@@ -18,8 +18,13 @@ Követelménylista
 -----------------
 | Modul | ID | Név | version | Kifejtés |
 | :---: | :---: | :---: | :---: | :--- |
-| Jogosultság | K1 | Bejelentkezési felület | 1.0 | A felhasználó belép az adatainak megadásával. |
-| example | ex | ex | ex | example |
+| Jogosultság | KJ1 | Bejelentkezés | 1.0 | A felhasználó belép az adatainak megadásával. |
+| Jogosultság | KJ2 | Regisztráció | 1.0 | A felhasználó a nevének, email címének és jelszavának valmint személyes adatainak megadásával regisztrálja magát. Ha a valamelyik hiányzik vagy nem megfelelő az elvárásoknak, akkor a rendszer figyelmezteti a felhasználót.|
+| Jogosultság | KJ3 | Jelszó visszaállítás | 1.0 | A felhasználó elfelejtett jelszó esetén vissza tudja azt álíltani az e-mail címe segítségével. | 
+| Felület | KF1 | Bejelentkezési felület | 1.0 | A felhasználók itt tudnak bejelentkezni a rendszerbe. |
+| Felület | KF2 | Regisztrációs felület | 1.0 | A felhasználót itt tudnak regisztrálni a rendszerbe. |
+| Felület | KF3 | Kérdőív kiválasztás | 1.0 | A felhasználó kiválaszt egy kérdőívet amelyre el szeretné küldeni a válaszait |
+| Felület | KF4 | Kérdőív megoldása | 1.0 | A felhasználó begépeli a kérdésire adott válaszait és elküldi. A kérdőívek minden felhasználó számára egyszer kitölthetőek. Újra kitölteni csak egy bizonyos idő elteltével van lehetőség (pl. 6 hónap). |
 
 
 Jelenlegi üzleti folyamatok modellje
@@ -36,6 +41,15 @@ Igényelt üzleti folyamatok modellje
 
 Használati esetek
 ------------------
-- 
-- 
-- 
+- Regisztráció:
+ - A felhasználó megadja a bejelentkezési adatait, ezután szükséges megerősíteni az e-mail címét. 
+ - Bejelentkezés után szükséges megadnia néhány további adatot. Ezt a Profil menü alatt teheti meg.
+- Bejelentkezés:
+ - A felhasználó megadja a bejelentkezési adatatait.
+ - Ha helyes a megadott jelszó + felhasználónév páros, tovább enged a rendszer.
+ - Ellenkező esetben kiírja a megfelelő hibaüzenetet.
+ - Lehetősége van a felhasználónak az elfelejtett jelszó gombra kattintva jelszó-emlékeztetőt kérni. 
+- Kérdőív kitöltése: 
+ - A felhasználó kiválasztja a számára szimpatikus kérdőívet.
+ - Értelemszerűen kitölti azokat, amennyiben szükséges megad további információkat.
+ - A kitöltés végeztével a mentés gombra kattintva tudja rögzíteni az adatokat.
