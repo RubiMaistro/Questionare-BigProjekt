@@ -29,9 +29,11 @@ Követelménylista
 
 Jelenlegi üzleti folyamatok modellje
 -------------------------------------
-- 
-- 
-- 
+-	Felszanáló regisztrációja : 1.1. A felhasználó létrehoz egy fiókot saját felhasználóén, jelszóval, amiből ki be lehet lépni, jelszót lehet módosítani => 1.2. Kérdőívek közötti választás
+-	Keresés : 2.1. A már létrehozott felhasználóval bejelentkezés. => 2.2. A kívánt kérdőívet megkeresi az elérhető kérdőívek között.
+-	kérdőív  : 3.1. Szükség van a 1.1. és 1.2 lépések végrehajtására. => 3.2. A felhasználó kitölti a kiválasztott kérdőívet=> 2.3. a  kérdésekre választ tud választani 1 legördülő menüből/ saját választ tud beírni => 3.4 Amennyiben végzett, el tudja menteni a válaszait, amely később kiértékelhetővé válik.
+-	kiértékelés: 4.1. Az elmentett kérdőív egy adatbázisba kerül => 4.2. A kiértékelés megtörténik, és erről összegzés készül=> 4.3. A kiértékelés eredményét elmenti a rendszer, annak érdekében, hogy a kitöltési idő végén közzétehető legyen az összegzett eredmény
+
 
 Igényelt üzleti folyamatok modellje
 ------------------------------------
