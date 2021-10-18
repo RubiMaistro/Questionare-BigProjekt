@@ -29,9 +29,20 @@ Jelenlegi üzleti folyamatok modellje
 
 Igényelt üzleti folyamatok
 ---------------------------
-- 
-- 
-- 
+- Felhasználó regisztráció és bejelentkezés
+    - Az adott felhasználó bejelenetkezik az adott oldalon, ha nincs még fiókja akkor a megadott gombbal
+    regisztrál.
+    - A regisztrációs felületen a mezőket kitöltve regisztrál majd bejelentkezik a regisztrált felhasználóval.
+    -  Bejeéentkezés után a felhasználó a kérdőív választó oldalon találja magát.
+- Kérdőív kiválasztása.
+    - A felhasználó a kérdőíveket listázó oldalon kiválasztja az álltala kívánt kédrdőívet a listából
+    - A kiválasztot kérdőív kezdés gombjával választhatja ki.    
+- Kérdőív kitöltése
+    - A Kiválasztott kérdőív minden kérdése időkorláthoz van kötve.
+    - Minden kérdést megválasolva egy gombra kattintva mentheti a választ, valamint haladhat tovább
+    - Az időben meg nem adott válaszok helytelennek számítanak.
+    - A teszt utolsó kérdését megválaszolva véget ér a teszt és a teszt kiértékeli magát. 
+    - A végén megtekinthető az eredmény, valamint a válaszai késobbiekben visszakereshetőek.
 
 Követelménylista
 -----------------
