@@ -29,9 +29,19 @@ Követelménylista
 
 Jelenlegi üzleti folyamatok modellje
 -------------------------------------
-- 
-- 
-- 
+1.1 A kérdőíveztetést egy erre a feldatra megbízott személy végzi:
+    1.2 Ez történhet az utcán egy stand mögött, illetve házalással.   
+2.1 Papír alapú kérőíveztetés folyamatba mehet jelenleg a következő módokon:
+    2.2 A tárgykör általános kérdései
+    2.3 Különböző kérdéstípusok: 
+        - 10 es skála
+        - Képfelismerés
+        - Eldöntendő kérdések
+        - Egyedi válasz adásra lehetőség(például tanács adás)
+    -2.4 Lakóhelyről és élethelyzetről szóló kérdések (opcionálisan)      
+3.1 Mindezek végeztével a kész tesztet fel kell vezetni egy adatbázisba.
+
+
 
 Igényelt üzleti folyamatok modellje
 ------------------------------------
