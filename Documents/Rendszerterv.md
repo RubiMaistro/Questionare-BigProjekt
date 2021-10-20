@@ -60,8 +60,11 @@ Funkcionális terv
 
 Fizikai környezet
 ------------------
-- 
-- 
+- Az alkalmazás webes felületre, elsősorban (nagyobb képernyős eszközökre) asztali számítógépekre, laptopokra és táblagépekre készül, ezért a felhasználói élmény érdekében célszerű így használni, viszont elérhető okostelefonról és kisebb tabletről is.
+- A projekt Laravel keretrenszer segítségével lesz megvalósítva.
+- A szerver oldalon PHP programnyelvet, felhasználó oldalon pedig HTML5 és CSS3 webtechnológiákat használunk. Bootstrapet is alkalmazunk.
+- Adatbázist használunk az adatok tárolására.
+- A webalkalmazás használatához Internet kapcsolatra van szükség.
 
 Implementációs terv
 --------------------
