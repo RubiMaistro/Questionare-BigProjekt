@@ -9,3 +9,13 @@ Interview
 - A projekt web applikációként lesz megvalósítva.
 - Keretrendszert célszerű használni. (Laravel)
 
+Egyeztetés a Stakeholderrel
+=================
+
+- A rendszernek 2 szereplője van, a kérdést felteveő(továbbiakban kérdező) és a kérdéseket megválaszoló(továbbiakban válaszoló)
+- A kérdező egy form on keresztül fel tudja tölteni a kérdéseit, amik vegyesen, de előre megjelölve tartalmaznak a téma ismeretét érintő, vélemény kérdéseket is. 
+- A válaszoló nem ismeri, hogy melyik kérdés, melyik alcsoportba tartozik.
+- A válaszoló csak egyszer tötlhet ki egy kérdőívet.
+- Az eltárolt kérdesknél meg kell jelölni, melyik alcsoportba tartozik, de nem szükséges a témaismeretet illető kérdésekhez a válaszokat tárolni.
+- Célszerű relációs adatbázist használni.
+- Képeket nem kell tárolni és/vagy feltöltenie a kérdezőnek.
