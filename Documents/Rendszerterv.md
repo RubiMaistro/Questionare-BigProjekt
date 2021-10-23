@@ -3,8 +3,10 @@ Rendszerterv
 
 A rendszer célja
 -----------------
-- 
-- 
+- A rendszer egy társadalomkutatást támogató alkalmazás. Ebben a verzióban nem jelenik meg még a kiértékelés, viszont szükséges minden feltételt megteremteni, hogy ez később lehetővé váljon.
+- A kérdések feltevése és kitöltése regisztrációhoz kötött. Különböző jogosultásgokkal rendelkezik a két csoport. A kérdés feltöltő egy előre elkészített ürlapon megadja a kérdéseket, amelyek az adatbázisban tárolódnak, illetve létrehoznak egy új táblát a válaszok tárolására.
+- A válaszoló az általa kiválasztott kérdőívet kiválasztja egy lsitából, majd kitölti azt. Fontos, hogy a témában való jártasságra utaló kérdések bele vannak ágyazva a többi kérdésbe.
+- A válaszoló amint végzett, elmenti a válaszait, ami így később kiértékelhető. 
 
 Projektterv
 ------------
