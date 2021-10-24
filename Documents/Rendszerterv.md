@@ -11,8 +11,8 @@ A rendszer célja
 Projektterv
 ------------
 - ### 1. Projektszerepkörök, felelőségek ###
-    - 
-    - 
+    -
+    -
 - ### 2. Projektmunkások és felelőségek ###
     - 
     - 
@@ -75,5 +75,6 @@ Implementációs terv
 
 Tesztterv
 ----------
-- 
-- 
+- Az tesztelési a fejlesztéssel párhuzamosan, funkciók elkészítését követően, az oldal építése közben történik mind ameddig el nem jutunk egy szinte kész állapotba, amit az alpha teszt követ. 
+- Az alpha tesztet a fejlesztő csapat fogja elvégezni, ekkor a funkciók, különboző böngészői környezetekben hogyan viselkedik az oldal. Amennyiben ez a könyvelt tesztelési folyamat lezárul következik az béta teszt.
+- A béta tesztet felhasználók egy szűk csoportja fogja végezni, ennek feladata, hogy a felhasználóktól visszajelzést kapjanak a fejlesztők az alkalmazás működését, hibáit illetően. A tesztelők az eredményeket, hibákat egy előre összeállított forma szerint könyvelik, értékelik
