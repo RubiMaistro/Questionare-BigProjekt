@@ -38,6 +38,7 @@ Funkcionális terv
 -----------------
 ### 1. Rendszerszereplők ###
 - Felhasználó
+- Kérdező
 
 ### 2. Rendszerhasználati esetek és lefutásaik ###
 - #### Felhasználó ####
@@ -45,6 +46,10 @@ Funkcionális terv
     - Kereshet a kérdőívek között
     - Kiválaszthat egy kérdőívet, amelyet kitölt
     - Elküldheti a kiválasztott a kérdőívre adott válaszait 
+- #### Kérdező ####
+    - Regisztrálhat mint Kérdező és bejelentkezhet a rendszerbe
+    - Feltölthet kérdőíveket, a sajátjait törölheti
+    - Látja, hogy hány ember töltötte ki a kérdőívet.
     
 ### 3. Menü-hierarchiák ###
 - #### Bejelentkezés: ####
@@ -53,7 +58,7 @@ Funkcionális terv
 
 - #### Main Menü: ####
     - Keresés a kérdőívek közt
-    - Kérdőív feltöltése
+    - Kérdőívek kezelése (csak Kérdezőnek látszik)
     - Kérdőív kiválasztás
     - Kijelentkezés
 
@@ -71,8 +76,9 @@ Fizikai környezet
 
 Implementációs terv
 --------------------
-- 
-- 
+- A webes alkalmazások előnyeit kihasználva nincs szükség kompatibilitásra, hiszen a php szerver oldalon fut.
+- A megjelenítéshez használt technológiák minimális követelményekkel rendelkeznek, egyedül az Interner Explorernél léphetnek fel komplikációk, de mivel hivatalosan nem támogatott böngésző, ezért nem készül rá implementáció, nem kerül bele a tesztbe se. 
+- A MariaDB használata során(a XAMPP beépített relációs-adatbáziskezelő szoftvere) előléphetnek kis- és nagybetűs érzékenységi problémák, de ez a működést nem befolyásolja, csak   a fejlesztés során igényel nagyobb figyelmet.  
 
 Tesztterv
 ----------
