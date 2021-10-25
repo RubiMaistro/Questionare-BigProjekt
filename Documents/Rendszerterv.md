@@ -30,9 +30,23 @@ Projektterv
 
 Követelmények
 --------------
-- 
-- 
-- 
+- Dizájn
+    - Egyszerű és átlátható dizájn
+    - Reszponzív felület
+- Regisztráció / Bejelentkezés
+    - A felhasználó tudjon bejelentkezni, valamint regisztrálni, ha nincsen még fiókja 
+    felhasználó névvel / E-Mail segítségével, valamint egy álltaluk megadott jelszóval.
+- Kérdőívek 
+    - Kérdőívek létrehozása a megadott témában 
+    - A felhasználó kiválaszthatja a kérdőívet melyet megszeretne oldani.
+    - A megoldott kérdőívek eredményeit minden felhasználónak külön egy adatbázisban tárolni
+    melyből könnyen lehet csoportosítani.
+    - A kérdőívek mind szöveges formájúak vagy választhatóak így nem kell médiát vagy filét 
+    feltöltenie a felhasználónak.
+- Adatbázis
+    - Relációs adatbázis az adatok tárolására a megoldott kérdőívekkel kapcsolatosan
+    minden felhasználóra.
+
 
 Funkcionális terv
 -----------------
