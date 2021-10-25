@@ -53,6 +53,7 @@ Funkcionális terv
 
 - #### Main Menü: ####
     - Keresés a kérdőívek közt
+    - Kérdőív feltöltése
     - Kérdőív kiválasztás
     - Kijelentkezés
 
