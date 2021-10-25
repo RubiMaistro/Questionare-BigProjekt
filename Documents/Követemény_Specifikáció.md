@@ -18,14 +18,21 @@ Vágyálom rendszer
 ------------------
 - A felhasználó a bejelentkezés után képes belépni a saját fiókjába. 
 - Szükség esetén a jelszót módosítani tudja a fsz. .
-- A felhasználó elkezdi az általa választott kérdőívvet. -> Először egy tesztet tölt ki a témában -> Elkezdi a teszt kitöltését.
+- A felhasználó elkezdi az általa választott kérdőívvet. -> Elkezdi a teszt kitöltését.
 - Amennyiben végzett, el tudja menteni a válaszait, amely később kiértékelhetővé válik.
 
 Jelenlegi üzleti folyamatok modellje
 -------------------------------------
-- 
-- 
-- 
+- A kérdőíveztetést egy erre a feldatra megbízott kolléga végzi:
+    - Ez történhet az utcán egy stand mögött, illetve házalással.   
+- Papír alapú kérőíveztetés zajlik jelenleg a következő módon:
+    - A téma általános kérdései
+    - Különböző kérdéstípusok: 
+        - 10 es skála
+        - Képfelismerés
+        - Eldöntendő kérdések
+    - Lakóhelyről és élethelyzetről szóló kérdések (opcionálisan)      
+- Mindezek végeztével a kész tesztet fel kell vezetni egy adatbázisba.
 
 Igényelt üzleti folyamatok
 ---------------------------
