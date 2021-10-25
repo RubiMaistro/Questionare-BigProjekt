@@ -11,6 +11,8 @@ A rendszer célja
 Projektterv
 ------------
 - ### 1. Projektszerepkörök, felelőségek ###
+    - A projektszerepkörök és felelőségek a feladatok típusától és összetettségétől függ. A feladat elosztás elsődleges szempontja a hatékonyság, az egyéni igények, valamint a kompetenciák függvényében történik.
+    - Valamilyen szinten ezek a szerepkörök átjárhatók inspiráció, segítség nyújtás vagy egyéni igények alapján.
 
 - ### 2. Projektmunkások és felelőségek ###
     - ### Frontend munkálatok: ### 
