@@ -76,8 +76,9 @@ Fizikai környezet
 
 Implementációs terv
 --------------------
-- 
-- 
+- A webes alkalmazások előnyeit kihasználva nincs szükség kompatibilitásra, hiszen a php szerver oldalon fut.
+- A megjelenítéshez használt technológiák minimális követelményekkel rendelkeznek, egyedül az Interner Explorernél léphetnek fel komplikációk, de mivel hivatalosan nem támogatott böngésző, ezért nem készül rá implementáció, nem kerül bele a tesztbe se. 
+- A MariaDB használata során(a XAMPP beépített relációs-adatbáziskezelő szoftvere) előléphetnek kis- és nagybetűs érzékenységi problémák, de ez a működést nem befolyásolja, csak   a fejlesztés során igényel nagyobb figyelmet.  
 
 Tesztterv
 ----------
