@@ -30,9 +30,11 @@ Projektterv
 
 Követelmények
 --------------
-- 
-- 
-- 
+- A kérdőívek megnyithatóak és kitölthetőek legyenek böngészőben a falhasználók számára.
+- A kérdőíveket és a felhasználó által megadott válasszokat el kell tárolni.
+- A kérdőíveken belül lehetséges időkorlát megadása és ennek paraméterezhetősége.
+- A kérdőívekben legyenek olyan kérdések, melyek a kitöltő személy tudását mérik fel.
+- Lehetőség legyen kérdőívek hozzáadására és törlésére is.
 
 Funkcionális terv
 -----------------
