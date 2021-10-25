@@ -11,17 +11,25 @@ A rendszer célja
 Projektterv
 ------------
 - ### 1. Projektszerepkörök, felelőségek ###
-    -
-    -
+
 - ### 2. Projektmunkások és felelőségek ###
-    - 
-    - 
+    - ### Frontend munkálatok: ### 
+        - Résztvevői: Deák Ruben, Dobos Zoltán, Balla Csaba
+        - Feladatuk a weblap felhasználói felületének kialakítása és design elemek megvalósítása.
+
+    - ### Backend munkálatok: ###
+        - Résztvevői: Dobos Zoltán, Deák Ruben, Varga Krisztián, Bánfalvi Márk Tamás, Balla Csaba (?)
+        - Feladatuk az adatok tárolásához szükséges adatszerkezetek kialakítása, funkciók létrehozása, a különböző platformok kiszolgálása adatokkal.
+        
 - ### 3. Ütemterv ###
-    - 
-    - 
+    - Időszakosan heti sprintekben, valamint szükségszerűen spontán időpontokban való egyeztetések alapján történik a fejlesztés.
+
 - ### 4. Mérföldkövek ###
-    - 
-    - 
+    1. A dokumentációk elkészítése jelenti a fejlesztés első mérföldkövét.
+    2. A funkciók létrehozása és manuális vagy kisebb tesztelések a működés szempontjából.
+    3. A program tesztelése. Ennél a mérföldkőnél rendelkezésére fog állni a program váza, illetve működőképes lesz. Lehetőség van átfogóbb tesztelésekre.
+    4. A kényelmi funkciók kialakítása és tökéletesítése, illetve a dizájn kerül beépítésre.
+    
 
 Üzleti folyamatok modellje
 --------------------------
