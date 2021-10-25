@@ -38,6 +38,7 @@ Funkcionális terv
 -----------------
 ### 1. Rendszerszereplők ###
 - Felhasználó
+- Kérdező
 
 ### 2. Rendszerhasználati esetek és lefutásaik ###
 - #### Felhasználó ####
@@ -45,6 +46,10 @@ Funkcionális terv
     - Kereshet a kérdőívek között
     - Kiválaszthat egy kérdőívet, amelyet kitölt
     - Elküldheti a kiválasztott a kérdőívre adott válaszait 
+- #### Kérdező ####
+    - Regisztrálhat mint Kérdező és bejelentkezhet a rendszerbe
+    - Feltölthet kérdőíveket, a sajátjait törölheti
+    - Látja, hogy hány ember töltötte ki a kérdőívet.
     
 ### 3. Menü-hierarchiák ###
 - #### Bejelentkezés: ####
@@ -53,7 +58,7 @@ Funkcionális terv
 
 - #### Main Menü: ####
     - Keresés a kérdőívek közt
-    - Kérdőív feltöltése
+    - Kérdőívek kezelése (csak Kérdezőnek látszik)
     - Kérdőív kiválasztás
     - Kijelentkezés
 
