@@ -1,7 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\HomepageController;
+//use App\Http\Controllers\HomepageController;
+
+use Laravel\UI\AuthRouteMethods;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,4 +16,9 @@ use App\Http\Controllers\HomepageController;
 |
 */
 
-Route::get('/', [HomepageController::class, "index"]);
+//Route::get('/', [HomepageController::class, "index"]) ->middleware('auth');
+
+Auth::routes();
+
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
