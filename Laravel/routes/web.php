@@ -16,9 +16,8 @@ use Laravel\UI\AuthRouteMethods;
 |
 */
 
-//Route::get('/', [HomepageController::class, "index"]) ->middleware('auth');
 
 Auth::routes();
 
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
