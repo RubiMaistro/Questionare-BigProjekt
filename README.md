@@ -1,2 +1,2 @@
-# Questionnaire-BigProjekt
+# Questionare-BigProjekt
 Szoftverfejlesztés módszertanok nagy projektje, ami egy online kérdőíves platform.
