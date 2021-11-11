@@ -8,16 +8,12 @@ use Illuminate\Http\Request;
 
 class QuestionnaireController extends Controller
 {
-    public function index(){
+    public function show($id) {
 
-        $questionnaires = Questionnaire::all();
+        $questionnaire = Questionnaire::find($id);
 
         return view('questionnaire.questionnaire', [
-            'questionnaires' => $questionnaires,
-        ]);
-    }
-
-    public function show() {
-        return null;
+            'questionnaire' => $questionnaire,
+        ]);;
     }
 }

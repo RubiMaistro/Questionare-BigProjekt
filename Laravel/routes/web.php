@@ -23,5 +23,5 @@ Auth::routes();
 
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/questionnaires', [App\Http\Controllers\QuestionnaireController::class, 'index']);
-Route::get('/questionnaires{id}', [App\Http\Controllers\QuestionnaireController::class, 'show']);
+Route::get('/questionnaires', [App\Http\Controllers\QuestionnaireListController::class, 'index']);
+Route::get('/questionnaire/{id}', [App\Http\Controllers\QuestionnaireController::class, 'show']);
