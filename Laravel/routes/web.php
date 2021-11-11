@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-//use App\Http\Controllers\HomepageController;
+use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\HomepageController;
 
 use Laravel\UI\AuthRouteMethods;
 
@@ -22,4 +23,5 @@ Auth::routes();
 
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/questionares', [App\Http\Controllers\QuestionareController::class, 'index']);
+Route::get('/questionnaires', [App\Http\Controllers\QuestionnaireController::class, 'index']);
+Route::get('/questionnaires{id}', [App\Http\Controllers\QuestionnaireController::class, 'show']);
