@@ -53,6 +53,12 @@
                                     <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
                                 </li>
                             @endif
+
+                            @if (Route::has('create-questionnaire'))
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('create-questionnaire') }}">{{ __('Create Questionnaire') }}</a>
+                                </li>
+                            @endif
                         @else
                             <li class="nav-item dropdown">
                                 <!--<a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>

@@ -25,3 +25,4 @@ Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('ho
 
 Route::get('/questionnaires', [App\Http\Controllers\QuestionnaireListController::class, 'index']);
 Route::get('/questionnaire/{id}', [App\Http\Controllers\QuestionnaireController::class, 'show']);
+Route::get('/create/questionnaire', [App\Http\Controllers\CreateQuestionnaireController::class, 'create']);
