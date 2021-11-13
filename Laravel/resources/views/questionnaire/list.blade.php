@@ -17,9 +17,9 @@
         <a href="/questionnaire/{{ $questionnaire->id }}" class="btn btn-primary" style="display: flex; justify-content: center;">Kitöltés</a>
       </div>
       @endforeach
-
     </div>
   </div>
+  
 </div>
 
 @endsection

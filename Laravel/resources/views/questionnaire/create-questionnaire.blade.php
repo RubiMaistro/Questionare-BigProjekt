@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="content">
+{{-- <div class="content">
     {{Form::open(array('url' => 'foo/bar'))}}  
     {{Form::text('Requested by', Auth::user()->email, array('disabled'=>'true'))}}
   
@@ -20,7 +20,7 @@
           </theader>
           <tbody>
                   <!-- loop through the items -->
-                  <td> {{-- Question --}}</td>
+                  <td>  Question </td>
                   <td> {{Form::submit('remove item', array('name' => 'removeItem'))}} </td>
           </tbody>
       </table>
@@ -35,6 +35,12 @@
   
     {{Form::submit('submit', array('name' => 'submit'))}}
   {{Form::close()}}
+</div> --}}
+
+<div class="justify-content-center">
+    <div>
+        @livewire('create-questionare')
+    </div>
 </div>
 
 @endsection
