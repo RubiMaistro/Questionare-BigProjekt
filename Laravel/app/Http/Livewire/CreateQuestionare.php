@@ -45,7 +45,7 @@ class CreateQuestionare extends Component
         
         foreach($this->questions as $row){
             $question = new Questions;
-            $question->questionare_id = $id;
+            $question->questionnaire_id = $id;
             $question->question = $row[1];
             $question->questionTyp = $row[2];
             $question->save();
