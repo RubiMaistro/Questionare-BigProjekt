@@ -12,7 +12,7 @@ class QuestionnaireController extends Controller
     public function show($id) {
 
         $questions = DB::table('questionnaire')
-                ->join('questions', 'questionnaire.id', '=', 'questions.id')
+                ->join('questions', 'questionnaire.id', '=', 'questions.questionnaire_id')
                 ->select('questions.question')
                 ->where('questions.questionnaire_id', $id)
                 ->get();
