@@ -1,43 +1,67 @@
 <div>
-    <div>
+    <div class="d-flex justify-content-center mb-5">
+        <h2 class="mx-1 ">Kérdőív neve: </h2>
         <input type="text" wire:model="questionareName">
     </div>
     <div>
         <h2>Kérdések:</h2>
-        <table>
+        <table class="table table-striped mb-5 mt-2 border-bottom border-secondary ">
             <tr>
-                <th>ID</th>
-                <th>Kérdés</th>
-                <th>Típus</th>
+                <th scope="col">ID</th>
+                <th scope="col">Kérdés</th>
+                <th scope="col">Típus</th>
+                <th scope=col>Műveletek</th>
             </tr>
             @forelse ($questions as $row)
             <tr>
                 <td>{{$row[0]}}</td>
                 <td>{{$row[1]}}</td>
                 <td>{{$row[2] == 'knowledge' ? 'Tudás' : 'Kérdés'}}</td>
+                <td>
+                    <button type="button" class="btn btn-default" aria-label="Modosítás" wire:click="updateClick({{$row[0]}})">
+                        <i class=" bi-pencil-square"></i>
+                    </button>
+                </td>
             </tr>
             @empty
-                <p>Még nem adtál hozzá kérdést!</p>
+                <p class="text-warning fst-italic font-monospace">Még nem adtál hozzá kérdést!</p>
             @endforelse
             
         </table>
     </div>
-    <div>
-        <h2>Új kérdés:</h2>
-        <input type="text" wire:model="newQuestion">
-        <select wire:model="typ">
+    @isset($editID)
+    <h2>Szerkesztés: </h2>
+    <div class="d-flex justify-content-center mb-3">
+        
+        <input type="text" wire:model="editQuestion">
+        <select wire:model="editTyp">
             <option value="knowledge">Tudás</option>
             <option value="question">Kérdés</option>    
         </select>
-    </div>
-    <div>
-        <button wire:click="addRow">Új sor</button>
-    </div>
-    @isset($questions)
-        <p>Sorok: {{count($questions)}}</p>
-    @endisset
+    
+        <div >
+            <button wire:click="updateRow" class="button btn-secondary mx-5">Módosítás mentése</button>
+        </div>
 
-    <div>
-        <button wire:click="saveQuestionare">Mentés</button>
     </div>
+
+    @endisset
+    <div>
+        <h2>Új kérdés:</h2>
+        <div class="d-flex justify-content-center">
+        
+            <input type="text" wire:model="newQuestion">
+            <select wire:model="typ">
+                <option value="knowledge">Tudás</option>
+                <option value="question">Kérdés</option>    
+            </select>
+        
+            <div >
+                <button wire:click="addRow" class="button btn-secondary mx-5">Új sor</button>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-center">
+            <button wire:click="saveQuestionare" class="button btn-primary mt-5">Mentés</button>
+        </div>
 </div>
