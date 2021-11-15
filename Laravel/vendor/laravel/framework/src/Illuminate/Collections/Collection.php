@@ -4,11 +4,12 @@ namespace Illuminate\Support;
 
 use ArrayAccess;
 use ArrayIterator;
+use Illuminate\Contracts\Support\CanBeEscapedWhenCastToString;
 use Illuminate\Support\Traits\EnumeratesValues;
 use Illuminate\Support\Traits\Macroable;
 use stdClass;
 
-class Collection implements ArrayAccess, Enumerable
+class Collection implements ArrayAccess, CanBeEscapedWhenCastToString, Enumerable
 {
     use EnumeratesValues, Macroable;
 
@@ -499,6 +500,29 @@ class Collection implements ArrayAccess, Enumerable
         }
 
         return true;
+    }
+
+    /**
+     * Determine if any of the keys exist in the collection.
+     *
+     * @param  mixed  $key
+     * @return bool
+     */
+    public function hasAny($key)
+    {
+        if ($this->isEmpty()) {
+            return false;
+        }
+
+        $keys = is_array($key) ? $key : func_get_args();
+
+        foreach ($keys as $value) {
+            if ($this->has($value)) {
+                return true;
+            }
+        }
+
+        return false;
     }
 
     /**
