@@ -23,7 +23,6 @@ return array(
     'App\\Http\\Controllers\\QuestionnaireListController' => $baseDir . '/app/Http/Controllers/QuestionnaireListController.php',
     'App\\Http\\Kernel' => $baseDir . '/app/Http/Kernel.php',
     'App\\Http\\Livewire\\CreateQuestionare' => $baseDir . '/app/Http/Livewire/CreateQuestionare.php',
-    'App\\Http\\Livewire\\NewQuestionare' => $baseDir . '/app/Http/Livewire/NewQuestionare.php',
     'App\\Http\\Middleware\\Authenticate' => $baseDir . '/app/Http/Middleware/Authenticate.php',
     'App\\Http\\Middleware\\EncryptCookies' => $baseDir . '/app/Http/Middleware/EncryptCookies.php',
     'App\\Http\\Middleware\\PreventRequestsDuringMaintenance' => $baseDir . '/app/Http/Middleware/PreventRequestsDuringMaintenance.php',

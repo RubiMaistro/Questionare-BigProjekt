@@ -560,7 +560,6 @@ class ComposerStaticInit2d611ed3fb9d4f2812e4aad598823b1f
         'App\\Http\\Controllers\\QuestionnaireListController' => __DIR__ . '/../..' . '/app/Http/Controllers/QuestionnaireListController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Livewire\\CreateQuestionare' => __DIR__ . '/../..' . '/app/Http/Livewire/CreateQuestionare.php',
-        'App\\Http\\Livewire\\NewQuestionare' => __DIR__ . '/../..' . '/app/Http/Livewire/NewQuestionare.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
         'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',
         'App\\Http\\Middleware\\PreventRequestsDuringMaintenance' => __DIR__ . '/../..' . '/app/Http/Middleware/PreventRequestsDuringMaintenance.php',
