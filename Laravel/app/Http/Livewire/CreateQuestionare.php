@@ -21,6 +21,8 @@ class CreateQuestionare extends Component
     public $editQuestion;
     public $editTyp;
 
+    public $success = False;
+
     public function addRow(){
         //Undorító spagetti, kijavítom majd
         if($this->typ == null){
@@ -51,6 +53,8 @@ class CreateQuestionare extends Component
             $question->save();
         }
 
+        $this->success = True;
+
     }
 
     public function updateClick($id){
@@ -65,6 +69,15 @@ class CreateQuestionare extends Component
         $this->questions[$this->editID][1] = $this->editQuestion;
 
         unset($this->editID);
+    }
+
+    public function toHome(){ return redirect('/');}
+
+    public function setNew(){
+        $this->success =False;
+        $this->questions = [];
+        $this->newQuestion = "";
+        $this->questionareName = "";
     }
 
     public function render()

@@ -56,13 +56,15 @@
                                     <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
                                 </li>
                             @endif
-
-                            @if (Route::has('create-questionnaire'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('create-questionnaire') }}">{{ __('Create Questionnaire') }}</a>
-                                </li>
-                            @endif
+                                
+                            
                         @else
+                            <li class="nav-item">
+                                <a class="nav-link" href="/create/questionnaire">Új kérdőív</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/questionnaires">Kérdőívek</a>
+                            </li>
                             <li class="nav-item dropdown">
                                 <!--<a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }}

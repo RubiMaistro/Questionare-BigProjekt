@@ -1,3 +1,5 @@
+@if (!$success)
+    
 <div>
     <div class="d-flex justify-content-center mb-5">
         <h2 class="mx-1 ">Kérdőív neve: </h2>
@@ -65,3 +67,12 @@
             <button wire:click="saveQuestionare" class="button btn-primary mt-5">Mentés</button>
         </div>
 </div>
+@endif
+
+@if($success)
+<div>
+    <h2>Sikeres feltöltés!</h2>
+    <button class="button btn-secondary" wire:click="setNew">Új kérdőív</button>
+    <button class="button btn-primary" wire:click="toHome">Kezdőlap</button>
+</div>
+@endif
