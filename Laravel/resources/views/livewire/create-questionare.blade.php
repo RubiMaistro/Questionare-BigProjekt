@@ -9,17 +9,20 @@
         <h2>Kérdések:</h2>
         <table class="table table-striped mb-5 mt-2 border-bottom border-secondary ">
             <tr>
-                <th scope="col">ID</th>
                 <th scope="col">Kérdés</th>
                 <th scope="col">Kérdéstípus</th>
                 <th scope="col">Altípus</th>
             </tr>
             @forelse ($questions as $row)
             <tr>
-                <td>{{$row[0]}}</td>
                 <td>{{$row[1]}}</td>
                 <td>{{$row[2] == 'knowledge' ? 'Tudás' : 'Kérdés'}}</td>
                 <td>{{ $row[3] }}</td>
+                @isset( $row[4] )
+                    @foreach ($row[4] as $rowAnswer )
+                        <td>{{ $rowAnswer }}</td>
+                    @endforeach
+                @endisset
                 <td>
                     <button type="button" class="btn btn-default" aria-label="Modosítás" wire:click="updateClick({{$row[0]}})">
                         <i class=" bi-pencil-square"></i>
@@ -83,7 +86,7 @@
 
     @if ($questionSubtyp == 'Szabadszavas')
         <div>
-            <h2>Új Szabadválszos kérdés:</h2>
+            <h2>Új Szabadválaszos kérdés:</h2>
             <div class="d-flex justify-content-center">
             
                 <input type="text" wire:model="newQuestion">

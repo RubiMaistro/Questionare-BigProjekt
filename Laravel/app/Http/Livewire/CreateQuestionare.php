@@ -5,6 +5,7 @@ namespace App\Http\Livewire;
 use Livewire\Component;
 use App\Models\Questionnaire;
 use App\Models\Questions;
+use App\Models\AnswerList;
 use Illuminate\Support\Facades\Auth;
 use Symfony\Component\Console\Question\Question;
 
@@ -45,7 +46,15 @@ class CreateQuestionare extends Component
     }
 
     public function addAnswerRow(){
-
+        if($this->typ == 'knowledge' || $this->typ =='question'){
+            $id = count($this->questions);
+            $questionArray = array($id, $this->newQuestion, $this->typ, $this->questionSubtyp, $this->answers);
+            array_push($this->questions, $questionArray);
+            $this->newQuestion = "";
+            $this->typ = 'Kérjük válassz típust!';
+            $this->answers = [];
+            $this->answer = '';
+        }
     }
 
     public function saveQuestionare(){
@@ -61,6 +70,15 @@ class CreateQuestionare extends Component
             $question->questionnaire_id = $id;
             $question->question = $row[1];
             $question->questionTyp = $row[2];
+            $question->question_subtyp = $row[3];
+            if(isset($row[4])){
+               foreach($row[4] as $answer){
+                $answerList = new AnswerList;
+                $answerList->questions_id = Questions::all()->max('id') + 1;
+                $answerList->answer = $answer;
+                $answerList->save();
+               }
+            }
             $question->save();
         }
 
