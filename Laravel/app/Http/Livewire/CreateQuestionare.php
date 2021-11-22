@@ -21,6 +21,10 @@ class CreateQuestionare extends Component
     public $editQuestion;
     public $editTyp;
 
+    public $questionSubtyp = 'withAnswer';
+    public $answers = [];
+
+
     public $success = False;
 
     public function addRow(){
@@ -35,6 +39,12 @@ class CreateQuestionare extends Component
         $this->question = "";
         $this->typ = "knowledge";
         //dd($this->questions);
+    }
+
+    public function addAnswer(){
+        dd($this->answers);
+        $text = "";
+        array_push($this->answers, $text);
     }
 
     public function saveQuestionare(){
@@ -78,6 +88,10 @@ class CreateQuestionare extends Component
         $this->questions = [];
         $this->newQuestion = "";
         $this->questionareName = "";
+    }
+
+    public function mount(){
+        $this->addAnswer();
     }
 
     public function render()
