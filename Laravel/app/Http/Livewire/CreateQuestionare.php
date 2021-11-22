@@ -17,34 +17,35 @@ class CreateQuestionare extends Component
     public $newQuestion;
     public $typ;
 
-    public $editID;
-    public $editQuestion;
-    public $editTyp;
+    // public $editID;
+    // public $editQuestion;
+    // public $editTyp;
 
-    public $questionSubtyp = 'withAnswer';
+    public $questionSubtyp = '';
     public $answers = [];
+    public $answer;
 
 
     public $success = False;
 
     public function addRow(){
-        //Undorító spagetti, kijavítom majd
-        if($this->typ == null){
-            $this->typ = 'knowledge';
-        }
+        if($this->typ == 'knowledge' || $this->typ =='question'){
 
-        $id = count($this->questions);
-        $questionArray = array($id, $this->newQuestion, $this->typ);
-        array_push($this->questions, $questionArray);
-        $this->question = "";
-        $this->typ = "knowledge";
-        //dd($this->questions);
+            $id = count($this->questions);
+            $questionArray = array($id, $this->newQuestion, $this->typ, $this->questionSubtyp);
+            array_push($this->questions, $questionArray);
+            $this->question = "";
+            $this->typ = 'Kérjük válassz típust!';
+        }
     }
 
     public function addAnswer(){
-        dd($this->answers);
-        $text = "";
-        array_push($this->answers, $text);
+        array_push($this->answers, $this->answer);
+        $this->answer = "";
+    }
+
+    public function addAnswerRow(){
+
     }
 
     public function saveQuestionare(){
@@ -81,6 +82,21 @@ class CreateQuestionare extends Component
         unset($this->editID);
     }
 
+    public function withAnswerbtn(){
+        $this->questionSubtyp = 'Válaszokkal';
+        $this->newQuestion = '';
+    }
+
+    public function freeAnswerBtn(){
+        $this->questionSubtyp = 'Szabadszavas';
+        $this->newQuestion = '';
+    }
+
+    public function trueFalseBtn(){
+        $this->questionSubtyp = 'Igaz-hamis';
+        $this->newQuestion = '';
+    }
+
     public function toHome(){ return redirect('/');}
 
     public function setNew(){
@@ -91,7 +107,7 @@ class CreateQuestionare extends Component
     }
 
     public function mount(){
-        $this->addAnswer();
+        $this->typ = 'Kérjük válassz típust!';
     }
 
     public function render()
