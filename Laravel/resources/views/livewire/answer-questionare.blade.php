@@ -8,17 +8,24 @@
         <div class="row justify-content-center">
             <div class="card" style="width: 55%;">
                 @if ( $question->question_subtyp == "Válaszokkal")
-                    {{ $question->question_subtyp }}
+                    @foreach ( $answers as $answer )
+                        @if ( $answer->questions_id == $question->id )
+                            <button id="{{ $question->id }}" wire:click="clickedAnswer">{{ $answer->answer }}</button>
+                        @endif
+                    @endforeach
                 @endif
                 @if ( $question->question_subtyp == "Igaz-hamis")
-                    <div>igaz v hamis</div>
+                    <button id="{{ $question->id }}" wire:click="clickedAnswer">Igaz</button>
+                    <button id="{{ $question->id }}" wire:click="clickedAnswer">Hamis</button>
                 @endif
                 @if ( $question->question_subtyp == "Szabadszavas")
-                    <input>
+                    <input type="text" >
                 @endif
-                
             </div>
         </div>
     </div>
     @endforeach
+
+    <button id="{{ $question->id }}" wire:click="saveAnswers">Befejez</button>
 </div>
+
