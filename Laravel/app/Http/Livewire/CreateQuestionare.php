@@ -7,7 +7,6 @@ use App\Models\Questionnaire;
 use App\Models\Questions;
 use App\Models\AnswerList;
 use Illuminate\Support\Facades\Auth;
-use Symfony\Component\Console\Question\Question;
 
 class CreateQuestionare extends Component
 {
