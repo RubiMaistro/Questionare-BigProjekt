@@ -7,7 +7,7 @@ use App\Models\Questionnaire;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 
-class QuestionnaireController extends Controller
+class AnswerQuestionnaireController extends Controller
 {
     public function show($id) {
 
@@ -17,7 +17,7 @@ class QuestionnaireController extends Controller
                 ->where('questions.questionnaire_id', $id)
                 ->get();
 
-        return view('questionnaire.questionnaire', [
+        return view('questionnaire.answer-questionnaire', [
             'questions' => $questions,
         ]);;
     }

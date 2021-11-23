@@ -9,6 +9,10 @@
             <h5 class="card-title">
                 {{ $question->question }}
             </h5>
+            <div>
+              Válasz
+              <input >
+            </div>
        </div>
        @endforeach
     </div>

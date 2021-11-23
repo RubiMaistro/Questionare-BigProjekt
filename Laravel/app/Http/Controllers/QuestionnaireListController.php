@@ -13,7 +13,7 @@ class QuestionnaireListController extends Controller
 
         $questionnaires = Questionnaire::all();
 
-        return view('questionnaire.list', [
+        return view('questionnaire.list-questionnaires', [
             'questionnaires' => $questionnaires,
         ]);
     }
