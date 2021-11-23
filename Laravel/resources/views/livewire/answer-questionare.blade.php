@@ -1,5 +1,8 @@
 
 <div>
+    <div class="card-header">
+        <h2>{{ $questionnaire->name }}</h2>
+    </div>
     @foreach($questions as $question)
     <div class="card-body" style="background-color: skyblue; margin: 1rem 0.5rem 1rem 0.5rem;">
         <h5 class="card-title">

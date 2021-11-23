@@ -2,17 +2,20 @@
 
 namespace App\Http\Livewire;
 
+use App\Models\Questionnaire;
 use Livewire\Component;
-use App\Models\Questions;
 use Illuminate\Support\Facades\DB;
 
 class AnswerQuestionare extends Component
 {
 
+    public $questionnaire_name;
     public $questions;
     public $answers;
 
     public function show($id){
+        $this->questionnaire_name = Questionnaire::find($id);
+
         $this->questions = DB::table('questionnaire')
             ->join('questions', 'questionnaire.id', '=', 'questions.questionnaire_id')
             ->select(
@@ -34,6 +37,7 @@ class AnswerQuestionare extends Component
         ->get();
 
         return view('livewire.answer-questionare', [
+            'questionnaire' => $this->questionnaire_name,
             'questions' => $this->questions,
             'answers' => $this->answers
         ]);
