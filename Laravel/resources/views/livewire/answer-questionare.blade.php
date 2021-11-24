@@ -1,4 +1,4 @@
-
+@if (!$success)
 <div>
     <div class="card-header">
         <h2>{{ $questionnaire->name }}</h2>
@@ -11,18 +11,18 @@
         <div class="row justify-content-center">
             <div class="card" style="width: 55%;">
                 @if ( $question->question_subtyp == "Válaszokkal")
-                    @foreach ( $answers as $answer )
+                    @foreach ( $answersFromDB as $answer )
                         @if ( $answer->questions_id == $question->id )
-                            <button wire:click="clickedAnswer">{{ $answer->answer }}</button>
+                            <button wire:click="clickedAnswer({{ $question->id }}, '{{ $answer->answer }}')">{{ $answer->answer }}</button>
                         @endif
                     @endforeach
                 @endif
                 @if ( $question->question_subtyp == "Igaz-hamis")
-                    <button id="{{ $question->id }}" wire:click="clickedAnswer">Igaz</button>
-                    <button id="{{ $question->id }}" wire:click="clickedAnswer">Hamis</button>
+                    <button wire:click="clickedAnswer({{ $question->id }}, 'Igaz')">Igaz</button>
+                    <button wire:click="clickedAnswer({{ $question->id }}, 'Hamis')">Hamis</button>
                 @endif
                 @if ( $question->question_subtyp == "Szabadszavas")
-                    <input type="text" >
+                    <input type="text" wire:model="answerInput">
                 @endif
             </div>
         </div>
@@ -31,4 +31,12 @@
 
     <button id="{{ $question->id }}" wire:click="saveAnswers">Befejez</button>
 </div>
+@endif
 
+@if($success)
+<div>
+    <h2>Sikeres kitöltés!</h2>
+    <button class="button btn-secondary" wire:click="setNew">Új kérdőív</button>
+    <button class="button btn-primary" wire:click="toHome">Kezdőlap</button>
+</div>
+@endif
