@@ -24,5 +24,5 @@ Auth::routes();
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/questionnaires', [App\Http\Controllers\QuestionnaireListController::class, 'index']);
-Route::get('/questionnaire/{id}', [App\Http\Livewire\AnswerQuestionare::class, 'show']);
+Route::get('/questionnaire/{id}', [App\Http\Controllers\AnswerQuestionnaireController::class, 'show']);
 Route::get('/create/questionnaire', [App\Http\Controllers\CreateQuestionnaireController::class, 'create'])->middleware('auth');

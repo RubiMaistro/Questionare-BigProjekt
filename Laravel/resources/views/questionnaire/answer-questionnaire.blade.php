@@ -1,8 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-	<div class="content">
-		@livewire('answer-questionare')
-	</div>
+
+<div class="d-flex justify-content-center">
+	@livewire('answer-questionare', ['id' => $id])
+</div>
 
 @endsection

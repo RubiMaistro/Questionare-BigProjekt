@@ -2,53 +2,27 @@
 
 namespace App\Http\Livewire;
 
-use App\Models\Questionnaire;
 use Livewire\Component;
-use Illuminate\Support\Facades\DB;
+use App\Models\Questionnaire;
+use App\Models\Questions;
+use App\Models\AnswerList;
+
 
 class AnswerQuestionare extends Component
 {
 
-    public $questionnaire_name;
-    public $questions;
-    public $answers;
+    public $questionnaire;
+    public $questions = [];
+    public $answers = [];
 
-    public function show($id){
-        $this->questionnaire_name = Questionnaire::find($id);
-
-        $this->questions = DB::table('questionnaire')
-            ->join('questions', 'questionnaire.id', '=', 'questions.questionnaire_id')
-            ->select(
-                'questions.id',
-                'questions.question', 
-                'questions.questionTyp', 
-                'questions.question_subtyp'
-                    )
-            ->where('questions.questionnaire_id', $id)
-            ->get();
-
-        $this->answers = DB::table('questions')
-        ->join('table_answer_list', 'questions.id', '=', 'table_answer_list.questions_id')
-        ->select(
-            'table_answer_list.id',
-            'table_answer_list.questions_id',
-            'table_answer_list.answer'
-                )
-        ->get();
-
-        return view('livewire.answer-questionare', [
-            'questionnaire' => $this->questionnaire_name,
-            'questions' => $this->questions,
-            'answers' => $this->answers
-        ]);
+    public function mount($id){
+        $this->questionnaire = Questionnaire::find($id);
+        $this->questions = Questions::all()->where('questionnaire_id', $id);
+        $this->answers = AnswerList::all();
     }
 
     public function clickedAnswer() {
-
-    }
-
-    public function setWritedAnswers() {
-
+            dd("Working");
     }
 
     public function saveAnswers() {

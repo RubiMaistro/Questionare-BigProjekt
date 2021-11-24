@@ -13,7 +13,7 @@
                 @if ( $question->question_subtyp == "Válaszokkal")
                     @foreach ( $answers as $answer )
                         @if ( $answer->questions_id == $question->id )
-                            <button id="{{ $question->id }}" wire:click="clickedAnswer">{{ $answer->answer }}</button>
+                            <button wire:click="clickedAnswer">{{ $answer->answer }}</button>
                         @endif
                     @endforeach
                 @endif
