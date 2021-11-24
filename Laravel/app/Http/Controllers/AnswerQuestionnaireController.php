@@ -12,7 +12,7 @@ use Illuminate\Http\Request;
 class AnswerQuestionnaireController extends Controller
 {
     public function show($id){
-        return view('livewire.answer-questionare',['id' => $id]);
+        return view('questionnaire.answer-questionnaire',['id' => $id]);
     }
 
 }
