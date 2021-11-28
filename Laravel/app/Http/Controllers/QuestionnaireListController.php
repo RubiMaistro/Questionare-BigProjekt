@@ -15,4 +15,13 @@ class QuestionnaireListController extends Controller
             'questionnaires' => $questionnaires,
         ]);
     }
+
+    public function review(){
+
+        $questionnaires = Questionnaire::all();
+
+        return view('questionare.questionare', [
+            'questionnaires' => $questionnaires,
+        ]);
+    }
 }
