@@ -26,3 +26,4 @@ Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('ho
 Route::get('/questionnaires', [App\Http\Controllers\QuestionnaireListController::class, 'index']);
 Route::get('/questionnaire/{id}', [App\Http\Controllers\AnswerQuestionnaireController::class, 'show']);
 Route::get('/create/questionnaire', [App\Http\Controllers\CreateQuestionnaireController::class, 'create'])->middleware('auth');
+Route::get('/design-review', [App\Http\Controllers\QuestionnaireListController::class, 'review']);
