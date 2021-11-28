@@ -58,7 +58,12 @@
 - Módszere
     - manuális tesztelés
 
-### 3.5	Tesztelési ütemterv – tesztforgatókönyv
+### 3.5	Terheléses teszt 
+- A terheléses teszt célja a tervezett kapacitások, valamint a rendelkezésre álló növekedési potenciál meghatározása. 
+- Módszere 
+    - unit teszt: adatbázis kérések
+
+### 3.6	Tesztelési ütemterv – tesztforgatókönyv
 - A tesztek elvégzésének meghatározott sorrendje és dokumentációja a tesztforgatókönyvben rögzítésre kerül.
 
 -----------------
