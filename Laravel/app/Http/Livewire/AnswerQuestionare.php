@@ -33,7 +33,7 @@ class AnswerQuestionare extends Component
     }
 
     public function saveAnswers() {
-        //dd($this->answersToDB);
+        dd($this->answersToDB);
         foreach($this->answersToDB as $element){
             $answer = new Answers;
             $answer->question_id = array_search($element, $this->answersToDB);
