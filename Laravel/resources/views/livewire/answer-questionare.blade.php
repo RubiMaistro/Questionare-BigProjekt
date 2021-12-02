@@ -1,25 +1,31 @@
 @if (!$success)
+
 <div>
     <div class="card-header">
         <h2>{{ $questionnaire->name }}</h2>
     </div>
+    <div style="opacity: 0">{{ $id = 1 }}</div>
     @foreach($questions as $question)
     <div class="card-body" style="background-color: skyblue; margin: 1rem 0.5rem 1rem 0.5rem;">
         <h5 class="card-title">
-            {{ $question->question }}
+            {{ $id.'. ' }}{{ $question->question }}
         </h5>
         <div class="row justify-content-center">
             <div class="card" style="width: 55%;">
                 @if ( $question->question_subtyp == "Válaszokkal")
+                    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
                     @foreach ( $answersFromDB as $answer )
                         @if ( $answer->questions_id == $question->id )
-                            <button wire:click="clickedAnswer({{ $question->id }}, '{{ $answer->answer }}')">{{ $answer->answer }}</button>
+                        <button type="button" class="btn btn-primary me-2" wire:click="clickedAnswer({{ $question->id }}, '{{ $answer->answer }}')">{{ $answer->answer }}</button>
                         @endif
                     @endforeach
+                    </div>
                 @endif
                 @if ( $question->question_subtyp == "Igaz-hamis")
-                    <button wire:click="clickedAnswer({{ $question->id }}, 'Igaz')">Igaz</button>
-                    <button wire:click="clickedAnswer({{ $question->id }}, 'Hamis')">Hamis</button>
+                <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                    <button type="button" class="btn btn-primary me-2" wire:click="clickedAnswer({{ $question->id }}, 'Igaz')">Igaz</button>
+                    <button type="button" class="btn btn-primary me-2" wire:click="clickedAnswer({{ $question->id }}, 'Hamis')">Hamis</button>
+                </div>
                 @endif
                 @if ( $question->question_subtyp == "Szabadszavas")
                     <input type="text" wire:model="answerInput">
@@ -27,6 +33,7 @@
             </div>
         </div>
     </div>
+    <div style="opacity: 0">{{ $id += 1 }}</div>
     @endforeach
 
     <button id="{{ $question->id }}" wire:click="saveAnswers">Befejez</button>
