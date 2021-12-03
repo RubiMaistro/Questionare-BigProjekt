@@ -1,5 +1,4 @@
 @if (!$success)
-
 <div>
     <div class="card-header">
         <h2>{{ $questionnaire->name }}</h2>
