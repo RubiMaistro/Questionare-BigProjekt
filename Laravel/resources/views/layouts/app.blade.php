@@ -23,11 +23,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     @livewireStyles
 </head>
-<body>
+<body class="bg-light">
     @livewireScripts
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
-            <div class="container">
+        <nav class="navbar navbar-expand-md navbar-white bg-dark shadow-sm">
+            <div class="container-fluid">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name', 'Laravel') }}
                 </a>
@@ -47,45 +47,39 @@
                         @guest
                             @if (Route::has('login'))
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                    <a class="nav-link" href="{{ route('login') }}">{{ __('Bejelentkezés') }}</a>
                                 </li>
                             @endif
 
                             @if (Route::has('register'))
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Regisztráció') }}</a>
                                 </li>
                             @endif
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/questionnaires">Kérdőívek</a>
+                                </li>
                                 
                             
                         @else
-                            <li class="nav-item">
-                                <a class="nav-link" href="/create/questionnaire">Új kérdőív</a>
-                            </li>
+                            @if (Auth::user()->isAsker != 0)
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/create/questionnaire">Új kérdőív</a>
+                                </li>
+                            @endif
                             <li class="nav-item">
                                 <a class="nav-link" href="/questionnaires">Kérdőívek</a>
                             </li>
-                            <li class="nav-item dropdown">
-                                <!--<a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }}
-                                </a>-->
-                                <a class="dropdown-item" href="{{ route('logout') }}"
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
-                                    </a>
-
-                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
+                                        {{ __('Kijelentkezés') }}
                                     </a>
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                         @csrf
                                     </form>
-                                </div>
                             </li>
                         @endguest
                     </ul>
@@ -93,7 +87,7 @@
             </div>
         </nav>
 
-        <main class="py-4">
+        <main class="py-4 bg-light">
             @yield('content')
         </main>
     </div>
