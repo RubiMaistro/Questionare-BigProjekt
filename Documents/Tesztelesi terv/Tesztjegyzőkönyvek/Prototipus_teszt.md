@@ -7,4 +7,6 @@
 | Regisztráció nem megfelelő jelszóval (kevés karakter) | 2021.12.04 12:40 | Varga  Krisztián | Regisztráció megtagadása, hibaüzenet  | Megfelelt |
 | Regisztráció rossz email formátummal | 2021.12.04 12:40 | Varga  Krisztián | Regisztráció megtagadása, hibaüzenet | Megfelelt |
 | Regisztráció már használt email címmel | 2021.12.04 12:45 | Varga  Krisztián | Regisztráció megtagadása, hibaüzenet | Megfelelt |
-| Bejelentkezés | 2021 .12.04 12:35 | Varga Krisztián | Sikeres bejelentkezés | Megfelelt |
+| Bejelentkezés | 2021.12.04 12:50 | Varga Krisztián | Sikeres bejelentkezés | Megfelelt |
+| Bejelentkezés helytelen adatokkal | 2021.12.04 12:50 | Varga Krisztián | Sikertelen bejelentkezés, hibaüzenet | Megfelelt |
+| Kijelentkezés | 2021.12.04 12:50 | Varga Krisztián | Sikeres kijelentkezés | Megfelelt |
