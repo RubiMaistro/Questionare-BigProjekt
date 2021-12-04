@@ -5,7 +5,7 @@
  <header>
     <style>
       #intro {
-        background-image: url("https://mdbootstrap.com/img/new/fluid/city/018.jpg");
+        background-image: url("hatter.jpg");
         height: 100vh;
       }
 
