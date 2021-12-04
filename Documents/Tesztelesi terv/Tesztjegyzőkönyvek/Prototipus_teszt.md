@@ -11,5 +11,5 @@
 | Bejelentkezés | 2021.12.04 12:50 | Varga Krisztián | Sikeres bejelentkezés | Megfelelt |
 | Bejelentkezés helytelen adatokkal | 2021.12.04 12:50 | Varga Krisztián | Sikertelen bejelentkezés, hibaüzenet | Megfelelt |
 | Kijelentkezés | 2021.12.04 12:50 | Varga Krisztián | Sikeres kijelentkezés | Megfelelt |
-| Kérdőív létrehozás |
-| Kérdőív kitöltése |
+| Kérdőívek elérése | 2021.12.04 12:55 | Varga Krisztián | Kérdőívek elérése (létrehozás/kitöltés) | Nem felelt meg (@livewire ('create-questionare')), az oldal nem elérhető |
+
