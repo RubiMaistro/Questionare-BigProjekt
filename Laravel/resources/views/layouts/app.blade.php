@@ -24,7 +24,7 @@
 <body class="bg-light">
     @livewireScripts
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-white bg-dark shadow-sm">
+        <nav class="navbar navbar-expand-md navbar-white bg-dark shadow-sm" style="position: fixed; top: 0; width: 100%; z-index: 1;">
             <div class="container-fluid">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name', 'Laravel') }}
@@ -84,10 +84,11 @@
                 </div>
             </div>
         </nav>
-
-        <main class="py-4 bg-light">
+        <div style="margin-top: 5rem;">
+        <main class="py-4">
             @yield('content')
         </main>
+        <div>
     </div>
 </body>
 </html>
