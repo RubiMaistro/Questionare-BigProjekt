@@ -30,8 +30,8 @@
 | Cím | Felelős személy 
 | :---: | :--- 
 | Teszt terv | Deák Ruben
-| Teszt-esetek | 
-| Tesztjegyzőkönyvek | 
+| Teszt-esetek | Varga Krisztián, Bánfalvi Márk Tamás, Deák Ruben
+| Tesztjegyzőkönyvek | Deák Ruben
 --------------
 
 ## 3. Tesztelési terv
@@ -78,6 +78,8 @@
 - A tesztelők a tesztforgatókönyvnek megfelelően elvégzik a tesztelést és az eredményt tesztjegyzőkönyvekben dokumentálják. 
 
 ### 4.2 Tesztelési jelentés
+- A tesztelési jelentést a tesztkoordinátor készíti el. 
+- Egy részletes áttekintése a lefutott teszteknek, azok eredményeinek, státuszának és a megjegyzéseknek.
 
 ---------------
 
