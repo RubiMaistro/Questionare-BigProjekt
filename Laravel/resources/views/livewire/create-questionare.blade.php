@@ -123,7 +123,7 @@
         </div>
     @endif
     <div class="d-flex justify-content-center">
-        <button wire:click="saveQuestionare" class="button btn-primary mt-5">Mentés</button>
+        <button wire:click="saveQuestionare" class="button btn-primary mt-5 " {{ $questionareName && $questions ? '' : 'disabled'}}>Mentés</button>
     </div>
 </div>
 @endif
