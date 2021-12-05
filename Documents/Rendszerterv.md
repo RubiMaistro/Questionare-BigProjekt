@@ -16,11 +16,11 @@ Projektterv
 
 - ### 2. Projektmunkások és felelőségek ###
     - ### Frontend munkálatok: ### 
-        - Résztvevői: Deák Ruben, Dobos Zoltán, Balla Csaba
+        - Résztvevői: Deák Ruben, Dobos Zoltán, Varga Krisztián, Bánfalvi Márk Tamás, Balla Csaba
         - Feladatuk a weblap felhasználói felületének kialakítása és design elemek megvalósítása.
 
     - ### Backend munkálatok: ###
-        - Résztvevői: Dobos Zoltán, Deák Ruben, Varga Krisztián, Bánfalvi Márk Tamás, Balla Csaba (?)
+        - Résztvevői: Dobos Zoltán, Deák Ruben 
         - Feladatuk az adatok tárolásához szükséges adatszerkezetek kialakítása, funkciók létrehozása, a különböző platformok kiszolgálása adatokkal.
         
 - ### 3. Ütemterv ###

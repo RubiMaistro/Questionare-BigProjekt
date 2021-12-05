@@ -5,12 +5,13 @@ namespace Illuminate\Support;
 use ArrayIterator;
 use Closure;
 use DateTimeInterface;
+use Illuminate\Contracts\Support\CanBeEscapedWhenCastToString;
 use Illuminate\Support\Traits\EnumeratesValues;
 use Illuminate\Support\Traits\Macroable;
 use IteratorAggregate;
 use stdClass;
 
-class LazyCollection implements Enumerable
+class LazyCollection implements CanBeEscapedWhenCastToString, Enumerable
 {
     use EnumeratesValues, Macroable;
 
@@ -505,6 +506,25 @@ class LazyCollection implements Enumerable
 
         foreach ($this as $key => $value) {
             if (array_key_exists($key, $keys) && --$count == 0) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    /**
+     * Determine if any of the keys exist in the collection.
+     *
+     * @param  mixed  $key
+     * @return bool
+     */
+    public function hasAny($key)
+    {
+        $keys = array_flip(is_array($key) ? $key : func_get_args());
+
+        foreach ($this as $key => $value) {
+            if (array_key_exists($key, $keys)) {
                 return true;
             }
         }
