@@ -46,11 +46,6 @@
 - A prototípustesztelés célja a rendszer már működő moduljainak önálló tesztelése
 - Módszere
     - manuális teszt (bejelentkezés, regisztráció, kérdőív létrehozás, kérdőív kitöltés)
-
-| Teszteset | Dátum és időpont | Tesztelést végző személy | Elvárt eredmény | Tesztelés eredménye | 
-| :---: | :---: | :---: | :---: | :---
-| Regisztráció | 2021.12.04 12:30 | Varga  Krisztián | Sikeres regisztráció | Megfelelt |
-| Bejelentkezés | 2021 .12.04 12:35 | Varga Krisztián | Sikeres bejelentkezés | Megfelelt |
     
 ### 3.3 Integrációs teszt
 - Az integrációs teszt célja a rendszer más rendszerekhez történő illesztésének vizsgálata, a több rendszereken keresztül átívelő funkciók tesztelésének érdekében. 
