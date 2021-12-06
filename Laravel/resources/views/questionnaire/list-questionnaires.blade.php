@@ -8,7 +8,6 @@
 <div class="content">
   <div class="row justify-content-center">
     <div class="card" style="width: 18rem;">
-      <img src="..." class="card-img-top" alt="...">
 
       @foreach($questionnaires as $questionnaire)
       <div class="card-body" style="background-color: yellowgreen; margin: 1rem 0.5rem 1rem 0.5rem;">
