@@ -9,8 +9,8 @@
 | Navigációs sáv ellenőrzése választ adó felhasználóval hitelesítve | 2021.12.04 20:07 | Deák Ruben | Minden hitelesített (regisztrált) felhasználó, aki csak kérdőívet tud megválaszolni látja a 'kérdőívek' és 'kijelentkezés' lehetőséget | Megfelelt
 | Felhasználói adatok kezelése | 2021.12.04 20:13 | Deák Ruben | Van és megjelenik a lehetőség jelszó változtatáshoz és elfelejtés esetén újabb kéréséhez  | Nem felelt meg (nincs sehol ilyen lehetőség)
 | Kérdőívek listázása | 2021.12.04 20:51 | Deák Ruben | Vendég és bejelentkezett felhasználóknak megjelenik a kérdőívek listája | Megfelelt
-| Kérdőív létrehozása |  |  |  | 
-| Kérdőívre való átirányítás |  |  |  | 
-| Kérdőív kitöltése vendégként |  |  |  | 
-| Kérdőív kitöltése regisztrált felhasználóként |  |  |  | 
+| Kérdőív létrehozása | 2021.12.06 10:11 | Deák Ruben | Az adatbázisban el vannak mentve a megadott kérdések és a válaszok. | Megfelelt
+| Kérdőívre való átirányítás | 2021.12.06 10:14 | Deák Ruben | A kérdőívek listájából kiválasztott kérdőívhez tartozó kérdés lista jelenik meg. |  Megfelelt
+| Kérdőív kitöltése vendégként | 2021.12.06 10:15 | Deák Ruben | A kérdésekre adott válaszok a 'Befejez' gomb megnyomása után az adatbázisban mentésre kerül | Megfelelt
+| Kérdőív kitöltése regisztrált felhasználóként | 2021.12.06 10:17 | Deák Ruben | A kérdésekre adott válaszok a 'Befejez' gomb megnyomása után az adatbázisban mentésre kerül | Megfelelt
 

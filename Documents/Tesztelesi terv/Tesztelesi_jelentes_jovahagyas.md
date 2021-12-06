@@ -12,7 +12,7 @@
 | Jegyzőkönyv neve | Modul(ok) neve | Tesztelést elvégezte | Jóváhagyás | Dátum
 | :--- | :--- | :---: | :---: | :---:
 | Fejlesztői teszt | Fejlesztési manuális teszt <br> Fejlesztési unit teszt | Deák Ruben | Deák Ruben | 2021.12.04
-| Prototípus (modul) teszt | - Bejelentkező felület <br> - Regisztrációs felület <br> - Kitöltő felület <br> - Létrehozó felület | Varga Krisztián | Deák Ruben | 2021.12.?
+| Prototípus (modul) teszt | - Bejelentkező felület <br> - Regisztrációs felület <br> - Kitöltő felület <br> - Létrehozó felület | Varga Krisztián | Deák Ruben | 2021.12.06
 | Integrációs teszt | - Integrálás és futtatás <br> - Alkalmazás funkciók tesztelése | tesztelő neve | jóváhagyó neve | dátum
-| Elfogadási teszt | Manuális teszt fehasználói szemmel | Bánfalvi Márk Tamás | Deák Ruben | 2021.12.?
-| Terheléses teszt | Unit teszt adatbázis kérésekkel | Dobos Zoltán | Deák Ruben | dátum
+| Elfogadási teszt | Manuális teszt fehasználói szemmel | Bánfalvi Márk Tamás | Deák Ruben | 2021.12.06
+| Terheléses teszt | Unit teszt adatbázis kérésekkel | Dobos Zoltán | Deák Ruben | nem szükséges
