@@ -1,5 +1,5 @@
 @if (!$success)
-<div>
+<div class="mt-4" style="min-width: 50%; max-width: 75%">
     <div class="card-header">
         <h2>{{ $questionnaire->name }}</h2>
     </div>
@@ -47,9 +47,10 @@
     </div>
     <div style="opacity: 0">{{ $id += 1 }}</div>
     @endforeach
-
-    <button id="{{ $question->id }}" wire:click="saveAnswers">Befejez</button>
-</div>
+    <div class="row justify-content-center">
+        <button style="height: 50px; width: 50%" id="{{ $question->id }}" wire:click="saveAnswers">Befejez</button>
+    </div>
+    </div>
 @endif
 
 @if($success)
