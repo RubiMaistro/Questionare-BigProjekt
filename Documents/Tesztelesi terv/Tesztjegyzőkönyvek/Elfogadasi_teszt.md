@@ -10,4 +10,6 @@
 | Navigációs panel megfelelő működése Google Chrome | 2021.12.04 13:39 | Bánfalvi Tamás Márk | A navigációs panel a megfelelő helyre irányít | Megfelelt |
 | Navigációs panel megfelelő működése Microsoft Edge | 2021.12.04 14:02 | Bánfalvi Tamás Márk | A navigációs panel a megfelelő helyre irányít | Megfelelt |
 | Navigációs panel megfelelő működése Mozzila Firefox | 2021.12.04 14:09 | Bánfalvi Tamás Márk | A navigációs panel a megfelelő helyre irányít | Megfelelt |
+| Átfogó navigáció és működés viszsgálat Mozzila Firefox Ubuntu alatt | 2021.12.06 14:12 | Balla Csaba | A navigáció és működés megfelelően működött | Megfelelt |
+| Átfogó navigáció és működés viszsgálat Google Chrome Ubuntu alatt | 2021.12.06 10:12 | Balla Csaba | A navigáció és működés megfelelően működött | Megfelelt |
 
