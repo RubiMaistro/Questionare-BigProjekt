@@ -6,22 +6,19 @@
 </head>
 
 <div class="content">
-  <div class="row justify-content-center">
-    <div class="card" style="width: 18rem;">
-      <img src="..." class="card-img-top" alt="...">
-
-      @foreach($questionnaires as $questionnaire)
-      <div class="card-body" style="background-color: yellowgreen; margin: 1rem 0.5rem 1rem 0.5rem;">
+  <div class="row row-cols-2 row-cols-lg-5 justify-content-center ">
+    @foreach($questionnaires as $questionnaire)
+      <div class="card p-4" style="background-color: skyblue; width: 20%; margin: 1rem 0.5rem 1rem 0.5rem;">
         <h5 class="card-title">
             {{ $questionnaire->name }}
         </h5>
         <p class="card-text">
             {{ $questionnaire->description }}
         </p>
-        <a href="/questionnaire/{{ $questionnaire->id }}" class="btn btn-primary" style="display: flex; justify-content: center;">Kitöltés</a>
+        <a href="/questionnaire/{{ $questionnaire->id }}" class="btn btn-primary " style="display: flex; justify-content: center;">Kitöltés</a>
       </div>
       @endforeach
-    </div>
+    
   </div>
   
 </div>
