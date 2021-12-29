@@ -7,6 +7,5 @@
 | Ütemterv, tesztforgatókönyv | Jelenlegi dokumentum
 | Fejlesztői teszt | Fejlesztési manuális teszt <br> Fejlesztési unit teszt
 | Prototípus (modul) teszt | Bejelentkező felület <br> Regisztrációs felület <br> Kitöltő felület <br> Létrehozó felület
-| Integrációs teszt | Integrálás és futtatás <br> Alkalmazás funkciók tesztelése |
 | Elfogadási teszt | Manuális teszt fehasználói szemmel
 | Terheléses teszt | Unit teszt adatbázis kérésekkel
